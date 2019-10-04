@@ -7,8 +7,8 @@ vms:
       
     network_switch: 'External Virtual Switch' 
 
-    src_vhd: "C:\\win2012r2-iis-gold.vhdx"
-    dest_vhd: "C:\\Users\\Public\\Documents\\Hyper-V\\Virtual hard disks\\web-{{env}}.vhdx"
+    src_vhd: "C:\Virtual Machine\Linux\Virtual Hard Disks\Linux.vhdx"
+    dest_vhd: "C:\Virtual Machine\Linux\vhdx\Linux.vhdx"
 
 
 
