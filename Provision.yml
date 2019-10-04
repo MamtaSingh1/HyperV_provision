@@ -23,18 +23,6 @@
   with_items: "{{ vms }}"
   register: new_vms
 
-- name: Configure VMs IP
-  win_hyperv_guest_config_net:
-    name: "{{item.name}}"
-    ip: "{{item.network.ip}}" 
-    netmask: "{{item.network.netmask}}"
-    gateway: "{{item.network.gateway}}"
-    dns: "{{item.network.dns}}"
-    type: static
-  with_items: "{{ vms }}"
-
-#- debug: var=new_vms.results
-
 - name: Poweron VMs
   win_hyperv_guest:
     name: "{{item.name}}"
